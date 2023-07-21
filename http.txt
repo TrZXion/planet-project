@@ -1,0 +1,28 @@
+# HTTP request and responses methods, http verbs
+# http requests
+
+GET/friends
+GET/friends/5
+______________ 
+POST/messages
+POST/messages/15
+______________
+PUT/messages/15
+DELETE/messages/15
+DELETE/friends/5
+
+method: post,get,PUT
+    path: /messages
+    Body: {text: "hello", photo: "smile.jpg"}
+    HEADERS: Host: facebook.com
+
+response: content-type: application/json
+        body: {text: "hi", photo:"wave.jpg"}
+        STATUS CODE: 
+                    1. Informational responses
+                    2. Successfull responses
+                    3. Redirection messages
+                    4. 
+                    5. Client error responses
+
+# 418(i am a teapot)
